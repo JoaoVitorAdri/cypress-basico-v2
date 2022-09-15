@@ -3,7 +3,7 @@
 describe('CAC TAT', ()=> {
 
     before(()=>{
-        cy.visit("./cypress-basico-v2/src/index.html") 
+        cy.visit("./src/index.html") 
     })
 
     it('Primeiro teste', ()=>{
@@ -22,7 +22,7 @@ describe('CAC TAT', ()=> {
     })
 
 
-    it.only('Upload de arquivo', ()=>{
-        cy.get('#file-upload').selectFile('cypress/fixtures/exemploUP.txt').should('have.value','exemploUP.txt')
+    it('Upload de arquivo', ()=>{
+        cy.get('#file-upload').selectFile('cypress/fixtures/exemploUP.txt')
     })
 })
