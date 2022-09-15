@@ -23,6 +23,6 @@ describe('CAC TAT', ()=> {
 
 
     it('Upload de arquivo', ()=>{
-        cy.get('#file-upload').selectFile('cypress/fixtures/exemploUP.txt')
+        cy.get('#file-upload').selectFile('./fixtures/exemploUP.txt')
     })
 })
